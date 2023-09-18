@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Formula 1</title>
+        <link rel="stylesheet" href="Pics css.css">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src="" alt="">
+                <ul>
+                    <li><a href="test 1.html">Home</a></li>
+                    <li><a href="Pictures.html">Pictures</a></li>
+                    <li><a href="Videos.html">Videos</a></li>
+                    <li><a href="Links.html">Social Media</a></li>
+                </ul>
+            </div>
+
+            <div class="side-bar">
+                <img src="c:\Users\Sony\Downloads\menu.png" class="menu">
+            </div>
+            
+        </div>
+        <div class="container">
+
+            <div class="image-container">
+                <div class="image"><img src="c:\Users\Sony\Downloads\All-2023-F1-cars.jpg" alt=""></div>
+                <div class="image"><img src="c:\Users\Sony\Downloads\pic f1 1.jpg" alt=""></div>
+                <div class="image"><img src="c:\Users\Sony\Downloads\F1 2.jpg" alt=""></div>
+                <div class="image"><img src="c:\Users\Sony\Downloads\pic4 (1).jpg" alt=""></div>
+                <div class="image"><img src="c:\Users\Sony\Desktop\Saif Website\pico.jpg" alt=""></div>
+                <div class="image"><img src="c:\Users\Sony\Downloads\pisc.jpg" alt=""></div>
+                <div class="image"><img src="c:\Users\Sony\Downloads\pice.jpg" alt=""></div>
+                <div class="image"><img src="c:\Users\Sony\Downloads\oo.jpg" alt=""></div>
+                <div class="image"><img src="c:\Users\Sony\Desktop\Saif Website\pio.jpg" alt=""></div>
+            </div>
+
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="c:\Users\Sony\Desktop\Saif Website\pic 10.jpg" alt="">
+            </div>
+
+        </div>
+        <script>
+            document.querySelectorAll('.image-container img').forEach(image =>{
+                image.onclick = () =>{
+                    document.querySelector('.popup-image').style.display = 'block';
+                    document.querySelector('.popup-image img').src = image.getAttribute('src');
+                }
+            });
+
+            document.querySelector('.popup-image span').onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'none';
+            }
+        </script>
+        
+        
+    </body>
+</html>
